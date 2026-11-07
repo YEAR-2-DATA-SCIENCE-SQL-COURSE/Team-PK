@@ -20,8 +20,6 @@ assignment presentation/
 └─ sample-data/                    CSV versions of the demo data
 ```
 
-> The presentation (`Gorilla_Trekking_SQL_Injection.pptx`) is **not** included in this
-> repository. It is shared separately via the Google Form link provided for submission.
 
 ## Entities
 
@@ -90,10 +88,6 @@ CSV versions of the demo rows used in `sql/02_sample_data.sql` live in `sample-d
 `bookings.csv`) for anyone who wants to load the data outside MySQL (e.g. into Excel,
 pandas, or another DBMS).
 
-## Presentation
-
-The slide deck (`Gorilla_Trekking_SQL_Injection.pptx`) is intentionally excluded from
-this GitHub repository and is submitted through the course's Google Form link instead.
 
 ## Team
 
