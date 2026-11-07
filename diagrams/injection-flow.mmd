@@ -1,0 +1,14 @@
+flowchart TD
+    A[User input: login/search field] --> B{Input used in query?}
+    B -->|String concatenation| C[Raw SQL built with user text]
+    C --> D[Attacker injects: admin' --  /  ' OR 1=1 --  / UNION SELECT ...]
+    D --> E[DB executes attacker-modified query]
+    E --> F[Auth bypass / data leak / data tampering]
+
+    B -->|Prepared statement| G[Query template + bound parameters]
+    G --> H[Driver sends SQL and data separately]
+    H --> I[DB treats input as literal value, never as code]
+    I --> J[Query runs safely regardless of input content]
+
+    style F fill:#f8b4b4,stroke:#a33
+    style J fill:#b4f8c0,stroke:#2a6

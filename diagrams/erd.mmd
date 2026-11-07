@@ -1,0 +1,50 @@
+erDiagram
+    VISITORS ||--o{ BOOKINGS : makes
+    PERMITS ||--|| BOOKINGS : covers
+    TREK_GROUPS ||--o{ BOOKINGS : fills
+    GUIDES ||--o{ TREK_GROUPS : leads
+    GORILLA_FAMILIES ||--o{ TREK_GROUPS : visited_in
+
+    VISITORS {
+        int visitor_id PK
+        string full_name
+        string email
+        string passport_no
+        string nationality
+    }
+    GUIDES {
+        int guide_id PK
+        string full_name
+        string username
+        string password_plain
+        string role
+        int years_exp
+    }
+    GORILLA_FAMILIES {
+        int family_id PK
+        string family_name
+        int group_size
+        string difficulty
+    }
+    TREK_GROUPS {
+        int group_id PK
+        date trek_date
+        int guide_id FK
+        int family_id FK
+        int max_visitors
+    }
+    PERMITS {
+        int permit_id PK
+        string permit_no
+        decimal price_usd
+        date issued_on
+        string status
+    }
+    BOOKINGS {
+        int booking_id PK
+        int visitor_id FK
+        int permit_id FK
+        int group_id FK
+        boolean paid
+        date booked_on
+    }

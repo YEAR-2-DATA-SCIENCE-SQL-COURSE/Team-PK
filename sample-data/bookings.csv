@@ -1,0 +1,7 @@
+booking_id,visitor_id,permit_id,group_id,paid,booked_on
+1,1,1,1,TRUE,2026-10-01
+2,2,2,1,TRUE,2026-10-02
+3,3,3,2,TRUE,2026-10-05
+4,4,4,3,FALSE,2026-10-07
+5,5,5,3,TRUE,2026-10-09
+6,6,6,4,FALSE,2026-10-10

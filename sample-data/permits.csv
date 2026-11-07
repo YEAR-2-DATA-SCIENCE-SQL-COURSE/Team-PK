@@ -1,0 +1,7 @@
+permit_id,permit_no,price_usd,issued_on,status
+1,RDB-0001,1500,2026-10-01,valid
+2,RDB-0002,1500,2026-10-02,valid
+3,RDB-0003,1500,2026-10-05,valid
+4,RDB-0004,1500,2026-10-07,valid
+5,RDB-0005,1500,2026-10-09,valid
+6,RDB-0006,1500,2026-10-10,valid
