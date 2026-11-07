@@ -20,8 +20,6 @@ assignment presentation/
 └─ sample-data/                    CSV versions of the demo data
 ```
 
-> The presentation (`Gorilla_Trekking_SQL_Injection.pptx`) is **not** included in this
-> repository. It is shared separately via the Google Form link provided for submission.
 
 ## Entities
 
